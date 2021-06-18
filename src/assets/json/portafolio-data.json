@@ -1,0 +1,29 @@
+[
+    {
+      "titulo": "PrincessBri",
+      "imagen": "/assets/images/PrincessBri.png",
+      "url":"https://www.instagram.com/p/CFqbYFblMOt/"
+    },
+    {
+      "titulo": "Fairy",
+      "imagen": "/assets/images/fairy.png",
+      "url":"https://www.instagram.com/p/CFqbYFblMOt/"
+    },
+    {
+      "titulo": "Plushie",
+      "imagen": "/assets/images/plushie.png",
+      "url":"https://www.instagram.com/p/CFqbYFblMOt/"
+    },
+    {
+      "titulo": "Kirby",
+      "imagen": "/assets/images/kirby.png"
+    },
+    {
+      "titulo": "Unicorn",
+      "imagen": "/assets/images/unicorn.png"
+    },
+    {
+      "titulo": "Ritual",
+      "imagen": "/assets/images/Ritual.png"
+    }
+]

@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import {A11yModule} from '@angular/cdk/a11y';
 import {ClipboardModule} from '@angular/cdk/clipboard';
@@ -69,6 +70,7 @@ import { FooterComponent } from './components/navigation/footer/footer.component
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     A11yModule,
     ClipboardModule,
     CdkStepperModule,

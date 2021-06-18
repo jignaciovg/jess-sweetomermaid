@@ -1,37 +1,9 @@
 <div class="container-fluid portafolio-container">
   <div class="row">
-    <div class="col col-sm col-md">
+    <div *ngFor="let item of DataItems" class="col col-sm col-md">
       <div  class="image-box">
-        <img  class="image-portafolio" src="../../../assets/images/PrincessBri.png" alt="">
-      </div>
-    </div>
-    <div class="col col-sm col-md">
-      <div class="image-box">
-        <img class="image-portafolio" src="../../../assets/images/fairy.png" alt="">
-      </div>
-    </div>
-    <div class="col col-sm col-md">
-      <div class="image-box">
-        <img class="image-portafolio" src="../../../assets/images/plushie.png" alt="">
-      </div>
-    </div>
-
-    <div class="col col-sm col-md">
-      <div class="image-box">
-        <img class="image-portafolio" src="../../../assets/images/kirby.png" alt="">
-      </div>
-    </div>
-    <div class="col col-sm">
-      <div class="image-box">
-        <img class="image-portafolio" src="../../../assets/images/unicorn.png" alt="">
-      </div>
-    </div>
-    <div class="col col-sm">
-      <div class="image-box">
-        <img class="image-portafolio" src="../../../assets/images/Ritual.png" alt="">
+        <img  class="image-portafolio" src="{{item.imagen}}" alt="{{item.titulo}}">
       </div>
     </div>
   </div>
 </div>
-
-

@@ -29,6 +29,13 @@
 
 @media only screen and (min-width: 600px) {
   /* For iPAD: */
+  .portafolio-container{
+    padding-top: 0.5rem;
+  }
+  .row{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .image-box{
     text-align: center;
     background-color: black;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PaginaserviceService } from 'src/app/services/paginaservice.service';
 
 @Component({
   selector: 'app-comisiones',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comisiones.component.css']
 })
 export class ComisionesComponent implements OnInit {
-
-  constructor() { }
+  DataItems: any[] = [];
+  constructor(private PaginaService:PaginaserviceService) {
+    this.PaginaService.getComisiones();
+   }
 
   ngOnInit(): void {
+    this.getData();
+  }
+
+  getData() {
+    this.PaginaService.getComisiones().subscribe((data: any) => {
+      this.DataItems = data;
+      console.log("Numero de items: " + this.DataItems.length);
+    });
   }
 
 }

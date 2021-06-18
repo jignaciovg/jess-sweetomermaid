@@ -1,0 +1,38 @@
+[
+    {
+      "titulo": "Cuerpo Completo",
+      "imagen": "/assets/images/Cuerpo-completo.png",
+      "descrip1":"COLOR PLANO $700 (Personaje extra +$350)",
+      "descrip2":"SOMBREADO $1000 (Personaje extra +$500)"
+    },
+    {
+      "titulo": "Medio Cuerpo",
+      "imagen": "/assets/images/Medio-cuerpo.png",
+      "descrip1":"COLOR PLANO $300 (Personaje extra +$100)",
+      "descrip2":"SOMBREADO $500 (Personaje extra +$200)"
+    },
+    {
+      "titulo": "Busto",
+      "imagen": "/assets/images/Busto.png",
+      "descrip1":"COLOR PLANO $200 SOMBREADO $300 ",
+      "descrip2":"(Individual únicamente)"
+    },
+    {
+      "titulo": "Retrato",
+      "imagen": "/assets/images/Retrato.png",
+      "descrip1":"COLOR PLANO $500 (Personaje extra +$200)",
+      "descrip2":"SOMBREADO $700 (Personaje extra +$300)"
+    },
+    {
+      "titulo": "Hora de aventura",
+      "imagen": "/assets/images/Hora-de-aventura.png",
+      "descrip1":"COLOR PLANO $300 (Personaje extra +$50)",
+      "descrip2":"SOMBREADO $400 (Personaje extra +$100)"
+    },
+    {
+      "titulo": "Emotes",
+      "imagen": "/assets/images/Emotes.png",
+      "descrip1":"1 emote por $300    3 emotes por $500    5 emotes por $800",
+      "descrip2":"(28x28, 56x56 y 112x112)"
+    }
+]
