@@ -1,51 +1,60 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
     <div class="menu-container">
+      <button type="button" class="btn-menu-mobile" (click)="drawer.toggle()">
+        Menu
+      </button>
       <div class="menu-bar">
         <div class="menu-options">
           <div>
-            <img src="/assets/images/estrellita.png" alt="estrella">
-            <a [routerLink]="['/portafolio']" (click)="drawer.toggle()">Portafolio</a>
-            <img src="../../../assets/images/estrellita.png" alt="estrella">
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+            <a [routerLink]="['/portafolio']" (click)="drawer.toggle()"
+              >Portafolio</a
+            >
+            <img src="../../../assets/images/estrellita.png" alt="estrella" />
           </div>
           <div>
-            <img src="/assets/images/estrellita.png" alt="estrella">
-            <a [routerLink]="['/sobre-mi']" (click)="drawer.toggle()">Sobre mí</a>
-            <img src="../../../assets/images/estrellita.png" alt="estrella">
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+            <a [routerLink]="['/sobre-mi']" (click)="drawer.toggle()"
+              >Sobre mí</a
+            >
+            <img src="../../../assets/images/estrellita.png" alt="estrella" />
           </div>
           <div>
-            <img src="/assets/images/estrellita.png" alt="estrella">
-            <a [routerLink]="['/comisiones']" (click)="drawer.toggle()">Comisiones</a>
-            <img src="/assets/images/estrellita.png" alt="estrella">
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+            <a [routerLink]="['/comisiones']" (click)="drawer.toggle()"
+              >Comisiones</a
+            >
+            <img src="/assets/images/estrellita.png" alt="estrella" />
           </div>
         </div>
       </div>
     </div>
 
     <div class="blue-line">
-      <img src="/assets/images/blue-bar.png" alt="linea-azul">
+      <img src="/assets/images/blue-bar.png" alt="linea-azul" />
     </div>
 
     <div class="contacto">
       <p>¡Sígueme en mis redes!</p>
       <div class="redes-sociales">
-        <img src="/assets/images/logo-fb.png" alt="facebook-logo">
-        <img src="/assets/images/logo-twitter.png" alt="twitter-logo">
-        <img src="/assets/images/logo-ig.png" alt="instagram-logo">
+        <a href="https://www.facebook.com/MaglcSpells"
+          ><img src="/assets/images/logo-fb.png" alt="facebook-logo"
+        /></a>
+        <a href="https://twitter.com/salemw1tch"
+          ><img src="/assets/images/logo-twitter.png" alt="twitter-logo"
+        /></a>
+        <a href="https://www.instagram.com/maglcspells/"
+          ><img src="/assets/images/logo-ig.png" alt="instagram-logo"
+        /></a>
       </div>
     </div>
-
-
   </mat-drawer>
 
-  <div class="example-sidenav-content ">
-    <p class="titulo">{{titulo}}</p>
+  <div class="example-sidenav-content">
+    <p class="titulo">{{ titulo }}</p>
     <button type="button" class="btn-menu-mobile" (click)="drawer.toggle()">
       Menu
     </button>
-
   </div>
-
 </mat-drawer-container>
-
-
