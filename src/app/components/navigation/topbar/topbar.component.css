@@ -21,6 +21,17 @@
    padding-top: 25vh;
  }
 
+ @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
  .paletas-image{
    text-align: center;
    background-image: url("/assets/images/paletas-neon.png");
@@ -30,6 +41,8 @@
    display: block;
    margin-left: auto;
    margin-right: auto;
+   transform: translatey(0px);
+	animation: float 3s ease-in-out infinite;
  }
 
 
@@ -90,6 +103,7 @@
      background-image: url("/assets/images/paletas-neon.png");
      height: 14rem;
      width: 14rem;
+     animation: float 0s ease-in-out infinite;
    }
 
    .menu-bar{
