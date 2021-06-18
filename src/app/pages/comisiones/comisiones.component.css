@@ -1,0 +1,95 @@
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.image-box h3{
+  font-family: 'Rum Raisin', sans-serif;
+  text-shadow: #00b0ff 3px 2px 17px;
+  font-size: 20px;
+}
+
+.image-box p{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.image-box{
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-portafolio{
+  height: auto;
+  width: 150px;
+  background-size: contain;
+  padding-bottom: 30px;
+}
+
+.portafolio-container{
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.image-popup{
+  width: 80px;
+  height: 80px;
+}
+
+
+@media only screen and (min-width: 600px) {
+  /* For iPAD: */
+  .image-box{
+    text-align: center;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .image-portafolio{
+    height: auto;
+    width: 17rem;
+    background-size: contain;
+  }
+
+  .image-box h3{
+    font-family: 'Rum Raisin', sans-serif;
+    text-shadow: #00b0ff 3px 2px 17px;
+    font-size: 1.7rem;
+  }
+
+  .image-box p{
+    margin-right: 1.3rem;
+    margin-left: 1.3rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  /*
+  .image-box h3{
+    font-family: 'Rum Raisin', sans-serif;
+    text-shadow: #00b0ff 3px 2px 17px;
+    font-size: 0.9rem;
+  }
+
+  .image-portafolio{
+    height: auto;
+    width: 11rem;
+    background-size: contain;
+  }
+  .image-box p{
+    margin-right: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+  }*/
+}

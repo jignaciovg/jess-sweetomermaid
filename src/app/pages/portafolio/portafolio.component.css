@@ -1,0 +1,54 @@
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+.image-box{
+  text-align: center;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-portafolio{
+  height: auto;
+  width: 300px;
+  background-size: contain;
+}
+
+.portafolio-container{
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.image-popup{
+  width: 80px;
+  height: 80px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For iPAD: */
+  .image-box{
+    text-align: center;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .image-portafolio{
+    height: auto;
+    width: 13rem;
+    background-size: contain;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .image-portafolio{
+    height: auto;
+    width: 13rem;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,235 @@
+.menu-bar{
+  display: none;
+ }
+
+ .header-bar{
+   height: 100vh;
+   background-image: url("/assets/images/portada-mobile.png");
+   background-size:cover;
+   background-repeat: no-repeat;
+ }
+
+ .header-container{
+   width: 100%;
+   height: 100vh;
+ }
+
+ .paletas-container{
+   text-align: center;
+   width: 100%;
+   height: 100vh;
+   padding-top: 25vh;
+ }
+
+ .paletas-image{
+   text-align: center;
+   background-image: url("/assets/images/paletas-neon.png");
+   background-size:contain;
+   background-repeat: no-repeat;
+   height: 450px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+
+ @media only screen and (min-width: 600px) {
+   /* For iPAD: */
+   .col-s-1 {width: 8.33%;}
+   .col-s-2 {width: 16.66%;}
+   .col-s-3 {width: 25%;}
+   .col-s-4 {width: 33.33%;}
+   .col-s-5 {width: 41.66%;}
+   .col-s-6 {width: 50%;}
+   .col-s-7 {width: 58.33%;}
+   .col-s-8 {width: 66.66%;}
+   .col-s-9 {width: 75%;}
+   .col-s-10 {width: 83.33%;}
+   .col-s-11 {width: 91.66%;}
+   .col-s-12 {width: 100%;}
+
+   .header-container{
+     text-align: center;
+     width: 100%;
+     height: 15rem;
+   }
+
+   .header-bar{
+     text-align: center;
+     width: 100%;
+     position: absolute;
+     height: 15rem;
+     background-color: rebeccapurple;
+   }
+
+   .header-bar:before {
+     background-image: url("/assets/images/portada-ipad.png");
+     background-size:cover;
+     background-repeat: no-repeat;
+     content: "";
+     width: 100%;
+     height: 20rem;
+     position: absolute;
+     display: block;
+     bottom: 0.2rem;
+   }
+
+   .paletas-container{
+     text-align: center;
+     margin: auto;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     width: 100%;
+     height: 15rem;
+     padding: 0px;
+   }
+
+   .paletas-image{
+     text-align: center;
+     background-image: url("/assets/images/paletas-neon.png");
+     height: 14rem;
+     width: 14rem;
+   }
+
+   .menu-bar{
+     display:block;
+     background-color: black;
+     width: 100%;
+     background-image: url("/assets/images/rose-bar.png");
+     height: 8rem;
+     background-size: cover;
+   }
+
+   .menu-options{
+     margin-left: 3rem;
+     margin-right: 3rem;
+     display: flex;
+     height: 8rem;
+     justify-content: space-between;
+     text-decoration: none;
+     text-decoration-line: none;
+   }
+
+   .menu-options div{
+     position: relative;
+     font-size: 32px;
+     padding-top: 2.5rem;
+     font-family: 'Rum Raisin', sans-serif;
+     text-decoration: none;
+     color: white;
+   }
+
+   .menu-options div a{
+     font-family: 'Rum Raisin', sans-serif;
+     text-decoration: none;
+     color: white;
+   }
+
+   .menu-options div a:hover{
+     cursor:pointer;
+     transition: all 0.7s ease;
+     color: whitesmoke;
+     text-shadow: #00b0ff 2px 3px 18px;
+ }
+
+ .menu-options div img{
+   height: 3rem;
+   padding-left: 0.6rem;
+   padding-right: 0.6rem;
+ }
+
+ }
+
+ @media only screen and (min-width: 768px) {
+   /* For desktop: */
+ /*
+   .header-container{
+     text-align: center;
+     width: 100%;
+     height: 12rem;
+   }
+
+   .header-bar{
+     position: relative;
+     height: 12rem;
+     background-color: rebeccapurple;
+   }
+
+   .header-bar:before {
+     background-image: url("/assets/images/portada.jpg");
+     background-size:cover;
+     background-repeat: no-repeat;
+     content: "";
+     width: 100%;
+     height: 14rem;
+     position: absolute;
+     display: block;
+     bottom: 0rem;
+   }
+
+   .paletas-container{
+     text-align: center;
+     margin: auto;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     height: 7rem;
+     padding: 0px;
+     padding-top: 2rem;
+   }
+
+   .paletas-image{
+     text-align: center;
+     background-image: url("/assets/images/paletas-neon.png");
+     height: 8rem;
+     width: 8rem;
+   }
+
+   .menu-bar{
+     display:block;
+     background-color: black;
+     width: 100%;
+     background-image: url("/assets/images/rose-bar.png");
+     height: 4rem;
+     background-size: cover;
+   }
+
+   .menu-options{
+     margin-left: 6rem;
+     margin-right: 6rem;
+     display: flex;
+     height: 4rem;
+     justify-content: space-between;
+     text-decoration: none;
+     text-decoration-line: none;
+   }
+
+   .menu-options div{
+     position: relative;
+     font-size: 1.2rem;
+     padding-top: 1.3rem;
+     font-family: 'Rum Raisin', sans-serif;
+     text-decoration: none;
+     color: white;
+   }
+
+   .menu-options div a{
+     font-family: 'Rum Raisin', sans-serif;
+     text-decoration: none;
+     color: white;
+   }
+
+   .menu-options div a:hover{
+     cursor:pointer;
+     transition: all 0.7s ease;
+     color: whitesmoke;
+     text-shadow: #00b0ff 2px 3px 18px;
+ }
+
+   .menu-options div img{
+     height: 1.5rem;
+     padding-left: 0.6rem;
+     padding-right: 0.6rem;
+   }*/
+ }
