@@ -15,7 +15,8 @@ export class SidebarComponent {
 }*/
 
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 /**
  * @title Autosize sidenav
@@ -25,7 +26,21 @@ import {Component} from '@angular/core';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css'],
 })
-export class SidebarComponent {
+export class SidebarComponent implements OnInit  {
   showFiller = false;
   titulo:string = "Portafolio";
+  public TituloActive:any;
+
+  constructor(private titleService: Title) {
+    this.TituloActive = localStorage.getItem('menu');
+  }
+
+  public setTitle(newTitle: string) {
+    this.titleService.setTitle(newTitle);
+    this.TituloActive = localStorage.getItem('menu');
+    console.log(this.TituloActive);
+  }
+
+  ngOnInit(): void {
+  }
 }

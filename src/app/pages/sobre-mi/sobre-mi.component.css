@@ -24,6 +24,11 @@ body{
   font-size: 15px;
 }
 
+.info p{
+  margin: 0px;
+  padding-top: 12px;
+}
+
 
 @media only screen and (min-width: 600px) {
   /* For iPAD: */

@@ -8,21 +8,21 @@
         <div class="menu-options">
           <div>
             <img src="/assets/images/estrellita.png" alt="estrella" />
-            <a [routerLink]="['/portafolio']" (click)="drawer.toggle()"
+            <a (click)="setTitle('MagicSpells - Portafolio')" [routerLink]="['/portafolio']" (click)="drawer.toggle()"
               >Portafolio</a
             >
             <img src="../../../assets/images/estrellita.png" alt="estrella" />
           </div>
           <div>
             <img src="/assets/images/estrellita.png" alt="estrella" />
-            <a [routerLink]="['/sobre-mi']" (click)="drawer.toggle()"
+            <a (click)="setTitle('MagicSpells - Sobre mi')" [routerLink]="['/sobre-mi']" (click)="drawer.toggle()"
               >Sobre mí</a
             >
             <img src="../../../assets/images/estrellita.png" alt="estrella" />
           </div>
           <div>
             <img src="/assets/images/estrellita.png" alt="estrella" />
-            <a [routerLink]="['/comisiones']" (click)="drawer.toggle()"
+            <a (click)="setTitle('MagicSpells - Comisiones')" [routerLink]="['/comisiones']" (click)="drawer.toggle()"
               >Comisiones</a
             >
             <img src="/assets/images/estrellita.png" alt="estrella" />
@@ -52,7 +52,7 @@
   </mat-drawer>
 
   <div class="example-sidenav-content">
-    <p class="titulo">{{ titulo }}</p>
+    <p class="titulo"></p>
     <button type="button" class="btn-menu-mobile" (click)="drawer.toggle()">
       Menu
     </button>

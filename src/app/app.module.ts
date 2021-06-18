@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatNativeDateModule, MatRippleModule} from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -55,6 +55,7 @@ import { ComisionesComponent } from './pages/comisiones/comisiones.component';
 import { SidebarComponent } from './components/navigation/sidebar/sidebar.component';
 import { TopbarComponent } from './components/navigation/topbar/topbar.component';
 import { FooterComponent } from './components/navigation/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { FooterComponent } from './components/navigation/footer/footer.component
     ComisionesComponent,
     SidebarComponent,
     TopbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -116,7 +118,7 @@ import { FooterComponent } from './components/navigation/footer/footer.component
     PortalModule,
     ScrollingModule
   ],
-  providers: [],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

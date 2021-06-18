@@ -15,9 +15,10 @@ export class PortafolioComponent implements OnInit {
   itemTitulo:string ="";
   itemUrl:string ="";
   itemDescription:string ="";
-
+  Titulo:string = "Portafolio";
+  TituloActive:any;
   constructor(private PaginaService:PaginaserviceService) {
-    this.PaginaService.getPortafolio();
+
    }
 
   ngOnInit(): void {

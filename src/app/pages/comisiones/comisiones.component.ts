@@ -8,6 +8,9 @@ import { PaginaserviceService } from 'src/app/services/paginaservice.service';
 })
 export class ComisionesComponent implements OnInit {
   DataItems: any[] = [];
+
+  Titulo:string = "Comisiones";
+  TituloActive:any;
   constructor(private PaginaService:PaginaserviceService) {
     this.PaginaService.getComisiones();
    }
