@@ -9,6 +9,13 @@ import { PaginaserviceService } from 'src/app/services/paginaservice.service';
 export class PortafolioComponent implements OnInit {
 
   DataItems: any[] = [];
+  SelectedItem: any[] =[];
+
+  itemImagen:string ="";
+  itemTitulo:string ="";
+  itemUrl:string ="";
+  itemDescription:string ="";
+
   constructor(private PaginaService:PaginaserviceService) {
     this.PaginaService.getPortafolio();
    }
@@ -22,6 +29,16 @@ export class PortafolioComponent implements OnInit {
       this.DataItems = data;
       console.log("Numero de items: " + this.DataItems.length);
     });
+  }
+
+   getDataImage(item:any){
+    console.log("ID SELECCIONADO: "+item.id)
+    console.log(item);
+    this.SelectedItem = item;
+    this.itemImagen = item.imagen;
+    this.itemTitulo = item.titulo;
+    this.itemUrl = item.url;
+    this.itemDescription = item.descripcion;
   }
 
 }

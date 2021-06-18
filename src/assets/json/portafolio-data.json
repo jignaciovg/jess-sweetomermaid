@@ -1,29 +1,41 @@
 [
     {
+      "id":1,
       "titulo": "PrincessBri",
       "imagen": "/assets/images/PrincessBri.png",
-      "url":"https://www.instagram.com/p/CFqbYFblMOt/"
+      "url":"https://www.instagram.com/p/CFqbYFblMOt/",
+      "descripcion":"Ilustración para el día 26 de octubre del 2020 y la palabra era “picos” de nuestra lista del “magictober” con halfaxaprimes y absolutiontwin. Dibujé a Princessbri en esta ocasión."
     },
     {
+      "id":2,
       "titulo": "Fairy",
       "imagen": "/assets/images/fairy.png",
-      "url":"https://www.instagram.com/p/CFqbYFblMOt/"
+      "url":"https://www.instagram.com/p/CFqbYFblMOt/",
+      "descripcion":"Ilustración para el día 3 de octubre del 2020 y la palabra era “hada” de nuestra lista del “magictober” con halfaxaprimes y absolutiontwin. Fanart para Jade Laverne como un hada."
     },
     {
+      "id":3,
       "titulo": "Plushie",
       "imagen": "/assets/images/plushie.png",
-      "url":"https://www.instagram.com/p/CFqbYFblMOt/"
+      "url":"https://www.instagram.com/p/CFqbYFblMOt/",
+      "descripcion":"Ilustración para el día 5 de octubre del 2020 y la palabra era “peluche” de nuestra lista del “magictober” con halfaxaprimes y absolutiontwin."
     },
     {
+      "id":4,
       "titulo": "Kirby",
-      "imagen": "/assets/images/kirby.png"
+      "imagen": "/assets/images/kirby.png",
+      "descripcion":"Fanart de Kirby a mi estilo porque ya tenía tiempo queriéndolo dibujar desde hace tiempo."
     },
     {
+      "id":5,
       "titulo": "Unicorn",
-      "imagen": "/assets/images/unicorn.png"
+      "imagen": "/assets/images/unicorn.png",
+      "descripcion":"Comisión para Persynthone en Instagram. Mi primera vez dibujando unicornios, me encantó el resultado. "
     },
     {
+      "id":6,
       "titulo": "Ritual",
-      "imagen": "/assets/images/Ritual.png"
+      "imagen": "/assets/images/Ritual.png",
+      "descripcion":"Mi entrada del concurso para la marca Atole de Menta, definitivamente tenía que lucirme siendo la temática aliens, brujas,etc decidí dibujar a mi personaje Orión y de paso la rediseñé. Personaje y diseño mío."
     }
 ]
