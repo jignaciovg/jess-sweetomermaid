@@ -6,9 +6,9 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { SobreMiComponent } from './pages/sobre-mi/sobre-mi.component';
 
 const routes: Routes = [
-  {path:'comisiones',component: ComisionesComponent},
-  {path:'sobre-mi',component: SobreMiComponent},
-  {path:'portafolio',component: PortafolioComponent},
+  //{path:'comisiones',component: ComisionesComponent},
+  //{path:'sobre-mi',component: SobreMiComponent},
+  //{path:'portafolio',component: PortafolioComponent},
   {path:'home',component: PaginaDemoComponent},
   {path:'', redirectTo:'/home', pathMatch:'full'},
 ];
