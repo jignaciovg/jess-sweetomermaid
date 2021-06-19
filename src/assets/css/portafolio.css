@@ -1,0 +1,50 @@
+/*START PORTAFOLIO*/
+
+.image-box-portafolio {
+  text-align: center;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-portafolio {
+  height: auto;
+  width: 300px;
+  background-size: contain;
+}
+
+.portafolio-container {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.image-popup {
+  width: 80px;
+  height: 80px;
+}
+/*END PORTAFOLIO*/
+
+@media only screen and (min-width: 600px) {
+  /*START PORTAFOLIO*/
+.portafolio-container{
+  padding-top: 0.5rem;
+}
+.row{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.image-box-portafolio{
+  text-align: center;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-portafolio{
+  height: auto;
+  width: 13rem;
+  background-size: contain;
+}
+/*END PORTAFOLIO*/
+}

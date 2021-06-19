@@ -1,0 +1,62 @@
+/*ABOUT*/
+body {
+  background-color: black;
+}
+.about-container {
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.image-box-about {
+  text-align: center;
+}
+.image-profile {
+  width: 310px;
+}
+
+.info {
+  text-align: center;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+.info p {
+  margin: 0px;
+  padding-top: 12px;
+}
+/*END ABOUT*/
+
+@media only screen and (min-width: 600px) {
+  .about-container{
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .image-profile{
+    width:auto;
+    height: 26rem;
+  }
+  .about-container{
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .info{
+    padding: 0px;
+    font-size: 1.1rem;
+  }
+}

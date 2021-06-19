@@ -1,0 +1,158 @@
+
+/*COMISIONES*/
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.image-box-comision h3 {
+  font-family: "Rum Raisin", sans-serif;
+  text-shadow: #00b0ff 3px 2px 17px;
+  font-size: 20px;
+}
+
+.image-box-comision p {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.image-box-comision {
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-comision {
+  height: auto;
+  width: 150px;
+  background-size: contain;
+  padding-bottom: 30px;
+}
+
+.comision-container {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.image-popup {
+  width: 80px;
+  height: 80px;
+}
+
+.comisiones-container {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.info-dibujo {
+  color: white;
+  background-color: black;
+}
+
+.divider {
+  border-right: 4px solid;
+}
+
+.dibujos {
+  text-align: center;
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+
+.dibujos div h3 {
+  font-family: "Rum Raisin", sans-serif;
+  background-color: black;
+}
+
+.dibujos div ul {
+  width: 100%;
+  padding: 0px;
+  padding-top: 30px;
+  background-color: black;
+  text-decoration: none;
+}
+
+.dibujos div ul li {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  font-size: 15px;
+  margin: 0px;
+  background-color: black;
+}
+
+.pagos {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+
+.pagos-row img {
+  width: 55px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.pagos-row {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.pagos div h3 {
+  font-family: "Rum Raisin", sans-serif;
+}
+
+.precio-final {
+  margin: 0px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 50px;
+}
+/*END COMISIONES*/
+
+@media only screen and (min-width: 600px) {
+/*COMISIONES*/
+.image-box-comision{
+  text-align: center;
+  background-color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-comision{
+  height: auto;
+  width: 17rem;
+  background-size: contain;
+}
+
+.image-box-comision h3{
+  font-family: 'Rum Raisin', sans-serif;
+  text-shadow: #00b0ff 3px 2px 17px;
+  font-size: 1.7rem;
+}
+
+.image-box-comision p{
+  margin-right: 1.3rem;
+  margin-left: 1.3rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+}
+}
+
+
+/*
+@media only screen and (min-width: 600px) {
+
+}
+
+*/
