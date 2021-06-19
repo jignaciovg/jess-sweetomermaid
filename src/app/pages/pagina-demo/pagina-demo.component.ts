@@ -134,6 +134,8 @@ export class PaginaDemoComponent implements OnInit {
     this.getDataPortafolio();
     this.getDataComision();
     this.TituloSelected = this.titulo;
+    this.elementP = document.getElementById('Portafolio') as HTMLElement
+    this.elementP.style.display = "block"
     this.elementA = document.getElementById('About') as HTMLElement
     this.elementA.style.display = "none"
     this.elementC = document.getElementById('Comision') as HTMLElement;

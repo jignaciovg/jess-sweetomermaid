@@ -253,3 +253,120 @@ html {
 }
 
 }
+
+@media (min-width:801px)  {
+  /*TOP BAR*/
+  .header-container-top{
+    text-align: center;
+    width: 100%;
+    height: 12rem;
+  }
+
+  .header-bar-top{
+    margin-top: 2rem;
+    position: absolute;
+    height: 13rem;
+    background-color: rebeccapurple;
+  }
+
+  .header-bar-top:before {
+    background-image: url("/assets/images/portada.jpg");
+     background-size:cover;
+     background-repeat: no-repeat;
+     content: "";
+     width: 100%;
+     height: 25rem;
+     position: absolute;
+     display: block;
+     bottom: 0rem;
+  }
+
+  .paletas-container-top{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    height: 8rem;
+    padding: 0px;
+    padding-top: 0rem;
+  }
+
+  .paletas-image-top{
+    text-align: center;
+    background-image: url("/assets/images/paletas-neon.png");
+    height: 10rem;
+    width: 10rem;
+  }
+
+  .menu-bar-top{
+    position: relative;
+    display:block;
+    background-color: black;
+    width: 100%;
+    background-image: url("/assets/images/rose-bar.png");
+    height: 6.5rem;
+    background-size:contain;
+  }
+
+  .menu-options-top{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+
+  .menu-options-top div{
+    position: relative;
+    font-size: 1.9rem;
+    padding-top: 1.6rem;
+    font-family: 'Rum Raisin', sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu-options-top div a{
+    font-family: 'Rum Raisin', sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu-options-top div a:hover{
+    cursor:pointer;
+    transition: all 0.7s ease;
+    color: whitesmoke;
+    text-shadow: #00b0ff 2px 3px 18px;
+}
+
+  .menu-options-top div img{
+    height: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+
+  .modal-mobil{
+    display: none;
+  }
+
+  .modal-image{
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-self: center;
+    height: 100%;
+  }
+
+  .container-link{
+    margin: auto;
+    padding-top: 3rem;
+    align-self: center;
+  }
+
+  .modal-dialog{
+    background-color: transparent;
+  }
+}

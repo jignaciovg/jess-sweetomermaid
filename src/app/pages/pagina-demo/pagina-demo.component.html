@@ -101,21 +101,27 @@
     </div>
   </div>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+
+
+  <div class="modal fade modal-laptop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <div>
-          <div class="close-btn-container">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="container">
+          <div class="row">
+            <div class="close-btn-container">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="col-6">
+              <img class="img-fluid modal-image" src="{{itemImagen}}" alt="">
+            </div>
+            <div class="col">
+              <div class="container-link">
+              <p class="modal-descrip">{{itemDescription}}</p>
+                <a class="modal-link pb-3" *ngIf="itemUrl" href="{{itemUrl}}">¡Ve la lista completa aquí! </a>
+              </div>
+            </div>
+
           </div>
-          <h5 class="modal-title" id="exampleModalLabel">{{itemTitulo}}</h5>
-        </div>
-        <div>
-          <img class="img-fluid modal-image" src="{{itemImagen}}" alt="">
-          <p class="modal-descrip">{{itemDescription}}</p>
-        </div>
-        <div class="container-link">
-          <a class="modal-link" *ngIf="itemUrl" href="{{itemUrl}}">¡Ve la lista completa aquí! </a>
         </div>
       </div>
     </div>

@@ -88,7 +88,7 @@
 }
 /*END MODAL*/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (device-width: 768px) and (device-height: 1024px) {
   /*START PORTAFOLIO*/
 .portafolio-container{
   padding-top: 0.5rem;
@@ -111,3 +111,14 @@
 }
 /*END PORTAFOLIO*/
 }
+
+@media (min-width:801px)  {
+/*PORTAFOLIO*/
+.image-portafolio{
+  height: auto;
+  width: 23rem;
+  background-size: contain;
+}
+
+}
+
