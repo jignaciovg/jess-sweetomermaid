@@ -23,6 +23,7 @@ export class PortafolioComponent implements OnInit {
 
   ngOnInit(): void {
     this.getData();
+    localStorage.setItem('menu', this.Titulo);
   }
 
   getData() {

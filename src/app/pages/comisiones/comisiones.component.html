@@ -1,61 +1,65 @@
-<div class="container-fluid portafolio-container">
-  <div class="row">
-    <div *ngFor="let item of DataItems" class="col col-sm col-md col-lg col-xl">
-      <div  class="image-box">
-        <h3>{{item.titulo}}</h3>
-        <img  class="image-portafolio" src="{{item.imagen}}" alt="{{item.titulo}}">
-        <p>{{item.descrip1}}</p>
-        <p>{{item.descrip2}}</p>
+
+<div id="Comision">
+  <div class="container-fluid portafolio-container">
+    <div class="row">
+      <div *ngFor="let item of DataItems" class="col col-sm col-md col-lg col-xl">
+        <div  class="image-box">
+          <h3>{{item.titulo}}</h3>
+          <img  class="image-portafolio" src="{{item.imagen}}" alt="{{item.titulo}}">
+          <p>{{item.descrip1}}</p>
+          <p>{{item.descrip2}}</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container-fluid comisiones-container">
-  <div class="row">
+  <div class="container-fluid comisiones-container">
+    <div class="row">
 
-    <div class="col-12 col-sm col-md-12 col-lg col-xl">
-      <div class="dibujos">
-        <div>
-          <h3 class="divider">No dibujo</h3>
-          <ul>
-            <li>-NSFW</li>
-            <li>-Cuerpos musculosos</li>
-            <li>-Robots</li>
-            <li>-Armaduras</li>
-            <li>-Hombres (no muy bien)</li>
-            <li>-Fondos detallados</li>
-          </ul>
-        </div>
-
-        <div>
-          <h3>Si Dibujo</h3>
-          <ul>
-            <li>-OC’s</li>
-            <li>-FC’s</li>
-            <li>-Fanart</li>
-            <li>-Diseños para  tatuajes</li>
-            <li>-Merchandising</li>
-            <li>-Animales</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="col col-sm col-md col-lg col-xl">
-      <div class="pagos">
-        <div>
-          <h3>Metodos de pago</h3>
-          <div class="pagos-row">
-            <img src="/assets/images/paypal.png" alt="">
-            <img src="/assets/images/oxxo.png" alt="">
-            <img src="/assets/images/BBVA.png" alt="">
+      <div class="col-12 col-sm col-md-12 col-lg col-xl">
+        <div class="dibujos">
+          <div>
+            <h3 class="divider">No dibujo</h3>
+            <ul>
+              <li>-NSFW</li>
+              <li>-Cuerpos musculosos</li>
+              <li>-Robots</li>
+              <li>-Armaduras</li>
+              <li>-Hombres (no muy bien)</li>
+              <li>-Fondos detallados</li>
+            </ul>
           </div>
-          <p>(Precios en pesos mexicanos)</p>
+
+          <div>
+            <h3>Si Dibujo</h3>
+            <ul>
+              <li>-OC’s</li>
+              <li>-FC’s</li>
+              <li>-Fanart</li>
+              <li>-Diseños para  tatuajes</li>
+              <li>-Merchandising</li>
+              <li>-Animales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-sm col-md col-lg col-xl">
+        <div class="pagos">
+          <div>
+            <h3>Metodos de pago</h3>
+            <div class="pagos-row">
+              <img src="/assets/images/paypal.png" alt="">
+              <img src="/assets/images/oxxo.png" alt="">
+              <img src="/assets/images/BBVA.png" alt="">
+            </div>
+            <p>(Precios en pesos mexicanos)</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <p class="precio-final">Los precios estipulados son solo iniciales (pueden aumentar con la complejidad de la ilustración) y son para uso personal (a excepción para merchandising)</p>
+    <p class="precio-final">Los precios estipulados son solo iniciales (pueden aumentar con la complejidad de la ilustración) y son para uso personal (a excepción para merchandising)</p>
 
+  </div>
 </div>
+

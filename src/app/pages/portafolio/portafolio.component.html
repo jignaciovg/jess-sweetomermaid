@@ -1,27 +1,30 @@
-<div class="container-fluid portafolio-container">
-  <div class="row">
-    <div *ngFor="let item of DataItems" class="col col-sm col-md">
-      <div class="image-box" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">
-        <img (click)= "getDataImage(item)" class="image-portafolio" src="{{item.imagen}}" alt="{{item.titulo}}">
+<div id="Portafolio">
+  <div class="container-fluid portafolio-container">
+    <div class="row">
+      <div *ngFor="let item of DataItems" class="col col-sm col-md">
+        <div class="image-box" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">
+          <img (click)= "getDataImage(item)" class="image-portafolio" src="{{item.imagen}}" alt="{{item.titulo}}">
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">{{itemTitulo}}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <img class="img-fluid" src="{{itemImagen}}" alt="">
-        <p>{{itemDescription}}</p>
-      </div>
-      <div class="modal-footer">
-        <a *ngIf="itemUrl" href="{{itemUrl}}">¡Ve la lista completa aquí! </a>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{itemTitulo}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid modal-image" src="{{itemImagen}}" alt="">
+          <p modal-descrip >{{itemDescription}}</p>
+        </div>
+        <div class="modal-footer">
+          <a *ngIf="itemUrl" href="{{itemUrl}}">¡Ve la lista completa aquí! </a>
+        </div>
       </div>
     </div>
   </div>
+
 </div>

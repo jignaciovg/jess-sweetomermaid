@@ -56,6 +56,7 @@ import { SidebarComponent } from './components/navigation/sidebar/sidebar.compon
 import { TopbarComponent } from './components/navigation/topbar/topbar.component';
 import { FooterComponent } from './components/navigation/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { PaginaDemoComponent } from './pages/pagina-demo/pagina-demo.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { HomeComponent } from './pages/home/home.component';
     SidebarComponent,
     TopbarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    PaginaDemoComponent
   ],
   imports: [
     BrowserModule,

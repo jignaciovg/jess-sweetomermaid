@@ -17,6 +17,7 @@ export class ComisionesComponent implements OnInit {
 
   ngOnInit(): void {
     this.getData();
+    localStorage.setItem('menu', this.Titulo);
   }
 
   getData() {

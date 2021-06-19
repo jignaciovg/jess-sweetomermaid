@@ -12,6 +12,7 @@ export class SobreMiComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    localStorage.setItem('menu', this.Titulo);
   }
 
 }

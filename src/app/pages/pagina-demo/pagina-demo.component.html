@@ -1,0 +1,215 @@
+<!--SIDEBAR-->
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+    <div class="menu-container">
+      <button type="button" class="btn-menu-mobile" (click)="drawer.toggle()">
+      </button>
+      <div class="menu-bar-side">
+        <div class="menu-options-side">
+          <div>
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+            <a (click)="setTitle('MagicSpells - Portafolio','Portafolio',1)"  (click)="drawer.toggle()"
+              >Portafolio</a
+            >
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+          </div>
+          <div>
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+            <a (click)="setTitle('MagicSpells - Sobre mi','Sobre mí',2)" (click)="drawer.toggle()"
+              >Sobre mí</a
+            >
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+          </div>
+          <div>
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+            <a  (click)="setTitle('MagicSpells - Comisiones', 'Comisiones',3)"   (click)="drawer.toggle()"
+              >Comisiones</a
+            >
+            <img src="/assets/images/estrellita.png" alt="estrella" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blue-line-side">
+      <img src="/assets/images/blue-bar.png" alt="linea-azul" />
+    </div>
+
+    <div class="contacto-side">
+      <p>¡Sígueme en mis redes!</p>
+      <div class="redes-sociales-side">
+        <a href="https://www.facebook.com/MaglcSpells"
+          ><img src="/assets/images/logo-fb.png" alt="facebook-logo"
+        /></a>
+        <a href="https://twitter.com/salemw1tch"
+          ><img src="/assets/images/logo-twitter.png" alt="twitter-logo"
+        /></a>
+        <a href="https://www.instagram.com/maglcspells/"
+          ><img src="/assets/images/logo-ig.png" alt="instagram-logo"
+        /></a>
+      </div>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <p></p>
+    <p class="titulo">{{TituloSelected}}</p>
+    <button type="button" class="btn-menu-mobile" (click)="drawer.toggle()">
+    </button>
+  </div>
+</mat-drawer-container>
+
+
+<!--TOPBAR-->
+<div id="inicio">
+  <div class="header-container-top">
+    <div class="header-bar-top">
+      <div class="paletas-container-top">
+        <div class="paletas-image-top"></div>
+      </div>
+    </div>
+  </div>
+  <div class="menu-container-top">
+    <div class="menu-bar-top">
+      <div class="menu-options-top">
+        <div>
+          <img src="/assets/images/estrellita.png" alt="">
+          <a (click)="setTitleTopBar('MagicSpells - Portafolio','Portafolio',1)">Portafolio</a>
+          <img src="/assets/images/estrellita.png" alt="">
+        </div>
+        <div>
+          <img src="/assets/images/estrellita.png" alt="">
+          <a (click)="setTitleTopBar('MagicSpells - Sobre mi','Sobre mí',2)" >Sobre mí</a>
+          <img src="/assets/images/estrellita.png" alt="">
+        </div>
+        <div>
+          <img src="/assets/images/estrellita.png" alt="">
+          <a (click)="setTitleTopBar('MagicSpells - Comisiones', 'Comisiones',3)" >Comisiones</a>
+          <img src="/assets/images/estrellita.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--PORTAFOLIO-->
+<div id="Portafolio">
+  <div class="container-fluid portafolio-container">
+    <div class="row">
+      <div *ngFor="let item of DataItems" class="col col-sm col-md">
+        <div class="image-box-portafolio" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">
+          <img (click)= "getDataImage(item)" class="image-portafolio" src="{{item.imagen}}" alt="{{item.titulo}}">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div>
+          <div class="close-btn-container">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <h5 class="modal-title" id="exampleModalLabel">{{itemTitulo}}</h5>
+        </div>
+        <div>
+          <img class="img-fluid modal-image" src="{{itemImagen}}" alt="">
+          <p class="modal-descrip">{{itemDescription}}</p>
+        </div>
+        <div class="container-link">
+          <a class="modal-link" *ngIf="itemUrl" href="{{itemUrl}}">¡Ve la lista completa aquí! </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--SOBRE MI-->
+<div id="About">
+  <div class="container-fluid about-container">
+    <div class="row">
+      <div class="col">
+        <div class="image-box-about">
+          <img class="image-profile" src="/assets/images/toon-me.png" alt="jess.png">
+        </div>
+      </div>
+      <div class="col">
+        <div class="info">
+          <p>¡Hola! Me llamo Jess y me encanta dibujar. Tengo aproximadamente 10 años en el medio de la ilustración digital. </p>
+          <p>Considero que mi estilo es muy cartoon con influencias del anime y glittery porque me encanta que sea muy brillante y vibrante. </p>
+          <p>Actualmente estudio diseño gráfico y aspiro a ser tatuadora y tener mi propia marca de ropa. Me gusta pintarme el cabello e ir a conciertos.  </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--COMISIONES-->
+
+<div id="Comision">
+  <div class="container-fluid comision-container">
+    <div class="row">
+      <div *ngFor="let item of DataComisiones" class="col col-sm col-md col-lg col-xl">
+        <div  class="image-box-comision">
+          <h3>{{item.titulo}}</h3>
+          <img  class="image-comision" src="{{item.imagen}}" alt="{{item.titulo}}">
+          <p>{{item.descrip1}}</p>
+          <p>{{item.descrip2}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid comisiones-container">
+    <div class="row">
+
+      <div class="col-12 col-sm col-md-12 col-lg col-xl">
+        <div class="dibujos">
+          <div>
+            <h3 class="divider">No dibujo</h3>
+            <ul>
+              <li>-NSFW</li>
+              <li>-Cuerpos musculosos</li>
+              <li>-Robots</li>
+              <li>-Armaduras</li>
+              <li>-Hombres (no muy bien)</li>
+              <li>-Fondos detallados</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Si Dibujo</h3>
+            <ul>
+              <li>-OC’s</li>
+              <li>-FC’s</li>
+              <li>-Fanart</li>
+              <li>-Diseños para  tatuajes</li>
+              <li>-Merchandising</li>
+              <li>-Animales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-sm col-md col-lg col-xl">
+        <div class="pagos">
+          <div>
+            <h3>Metodos de pago</h3>
+            <div class="pagos-row">
+              <img src="/assets/images/paypal.png" alt="">
+              <img src="/assets/images/oxxo.png" alt="">
+              <img src="/assets/images/BBVA.png" alt="">
+            </div>
+            <p>(Precios en pesos mexicanos)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="precio-final">Los precios estipulados son solo iniciales (pueden aumentar con la complejidad de la ilustración) y son para uso personal (a excepción para merchandising)</p>
+  </div>
+</div>
+
+
+
