@@ -58,13 +58,14 @@ html {
   background-color: black;
 }
 .menu-bar-side {
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 14px;
+  padding-bottom: 25px;
 }
 .menu-options-side div {
   text-align: center;
-  padding-bottom: 28px;
-  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  background-color: black;
 }
 .menu-options-side div a {
   font-family: "Rum Raisin", sans-serif;
@@ -91,7 +92,7 @@ html {
   font-size: 20px;
 }
 .contacto-side p {
-  padding-top: 60px;
+  padding-top: 20px;
   margin-left: 45px;
   margin-right: 45px;
   padding-bottom: 10px;
@@ -115,7 +116,7 @@ html {
 }
 
 @media (min-width:801px)  {
- 
+
 
   .modal-mobil{
     display: none;

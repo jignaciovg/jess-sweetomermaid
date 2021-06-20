@@ -46,8 +46,8 @@ export class PaginaDemoComponent implements OnInit {
     this.TituloSelected = seccion;
     this.showCategoria = value;
 
-    console.log("PAGINA "+ seccion);
-    console.log("CATEGORIA: "+value);
+    //console.log("PAGINA "+ seccion);
+    //console.log("CATEGORIA: "+value);
 
     switch(value){
       case 1:
@@ -91,8 +91,8 @@ export class PaginaDemoComponent implements OnInit {
     this.TituloSelected = seccion;
     this.showCategoria = value;
 
-    console.log("PAGINA "+ seccion);
-    console.log("CATEGORIA: "+value);
+    //console.log("PAGINA "+ seccion);
+    //console.log("CATEGORIA: "+value);
 
     switch(value){
       case 1:
@@ -146,20 +146,20 @@ export class PaginaDemoComponent implements OnInit {
   getDataPortafolio() {
     this.PaginaService.getPortafolio().subscribe((data: any) => {
       this.DataItems = data;
-      console.log("Numero de items: " + this.DataItems.length);
+      //console.log("Numero de items: " + this.DataItems.length);
     });
   }
 
   getDataComision() {
     this.PaginaService.getComisiones().subscribe((data: any) => {
       this.DataComisiones = data;
-      console.log("Numero de items: " + this.DataItems.length);
+      //console.log("Numero de items: " + this.DataItems.length);
     });
   }
 
    getDataImage(item:any){
-    console.log("ID SELECCIONADO: "+item.id)
-    console.log(item);
+    //console.log("ID SELECCIONADO: "+item.id)
+    //console.log(item);
     this.SelectedItem = item;
     this.itemImagen = item.imagen;
     this.itemTitulo = item.titulo;
