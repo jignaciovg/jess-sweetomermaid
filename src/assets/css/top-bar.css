@@ -107,7 +107,7 @@
     width: 100%;
     background-image: url("/assets/images/rose-bar.png");
     height: 8rem;
-    background-size: cover;
+    background-size:cover;
   }
   .menu-options-top{
     margin-left: 3rem;
